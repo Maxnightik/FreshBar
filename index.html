@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freshy Bar</title>
+
+  <link rel="preload" href="fonts/mulish-v12-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/mulish-v12-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/mulish-v12-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" type="module"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="visually-hidden">
+      Freshy Bar - Свіжі, смачні та прохолодні смузі
+    </h1>
+    <div class="container header__container">
+      <img src="img/logo.svg" alt="logo Freshy Bar" class="header__logo" />
+      <div class="header__btns">
+        <button class="header__btn-order">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.24998 7.013V6C8.24998 5.00544 8.64507 4.05161 9.34833 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9945 2.25 13.9484 2.64509 14.6516 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6V7.013C17.047 7.05 17.837 7.183 18.442 7.68C19.272 8.36 19.502 9.514 19.965 11.823L20.565 14.823C21.229 18.143 21.561 19.803 20.661 20.902C19.76 22 18.067 22 14.68 22H9.31998C5.93398 22 4.23998 22 3.33998 20.902C2.43998 19.804 2.77198 18.144 3.43598 14.823L4.03598 11.823C4.49798 9.514 4.72898 8.36 5.55798 7.68C6.16398 7.184 6.95398 7.05 8.25098 7.013H8.24998ZM9.74998 6C9.74998 5.40326 9.98703 4.83097 10.409 4.40901C10.8309 3.98705 11.4032 3.75 12 3.75C12.5967 3.75 13.169 3.98705 13.591 4.40901C14.0129 4.83097 14.25 5.40326 14.25 6V7H9.74998V6ZM15 11C15.2652 11 15.5196 10.8946 15.7071 10.7071C15.8946 10.5196 16 10.2652 16 10C16 9.73478 15.8946 9.48043 15.7071 9.29289C15.5196 9.10536 15.2652 9 15 9C14.7348 9 14.4804 9.10536 14.2929 9.29289C14.1053 9.48043 14 9.73478 14 10C14 10.2652 14.1053 10.5196 14.2929 10.7071C14.4804 10.8946 14.7348 11 15 11ZM9.99998 10C9.99998 10.2652 9.89462 10.5196 9.70709 10.7071C9.51955 10.8946 9.2652 11 8.99998 11C8.73476 11 8.48041 10.8946 8.29287 10.7071C8.10534 10.5196 7.99998 10.2652 7.99998 10C7.99998 9.73478 8.10534 9.48043 8.29287 9.29289C8.48041 9.10536 8.73476 9 8.99998 9C9.2652 9 9.51955 9.10536 9.70709 9.29289C9.89462 9.48043 9.99998 9.73478 9.99998 10Z"
+              fill="black" />
+          </svg>
+        </button>
+        <a href="#goods" class="btn header__btn">Заказати</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero__title">
+          Обери свій <span class="text-red">освіжаючий </span> фреш
+        </h2>
+
+        <div class="hero__cups">
+          <div class="hero__cup hero__cup_pink">
+            <img class="hero__img" src="img/pink.png" alt="" />
+          </div>
+
+          <div class="hero__cup hero__cup_orange">
+            <img class="hero__img" src="img/green.png" alt="" />
+          </div>
+
+          <div class="hero__cup hero__cup_green">
+            <img class="hero__img" src="img/orange.png" alt="" />
+          </div>
+        </div>
+
+        <div class="decor">
+          <div class="decor__img decor__img_01"></div>
+          <div class="decor__img decor__img_02"></div>
+          <div class="decor__img decor__img_03"></div>
+          <div class="decor__img decor__img_04"></div>
+          <div class="decor__img decor__img_05"></div>
+          <div class="decor__img decor__img_06"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="goods" id="goods">
+      <div class="container">
+        <h2 class="goods__title">Меню</h2>
+
+        <ul class="goods__list">
+          <li class="goods__item">
+            <article class="coctail">
+              <img src="img/make your own.jpg" alt="" class="coctail__img" />
+
+              <div class="coctail__content">
+                <div class="coctail__text">
+                  <h3 class="coctail__title">Збери сам</h3>
+                  <p class="coctail__price text-red">26 ₴</p>
+                  <p class="coctail__size">300мл</p>
+                </div>
+
+                <button class="btn coctail__btn coctail__btn_make">
+                  Додати
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <img src="img/logo.svg" alt="logo Freshy Bar" class="footer__logo" />
+      <p class="footer__copyright">© Freshy Bar, 2024</p>
+
+      <ul class="footer__developer">
+        <li class="footer__developer-item">
+          Designer:
+          <a href="#" class="footer__developer-link">Anastasia Ilina</a>
+        </li>
+        <li>
+          Developer:
+          <a href="#" class="footer__developer-link">Maxnight</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="modal modal_order">
+    <div class="modal__main">
+      <div class="order">
+        <h2 class="order__title">
+          Кошик<sup class="text-red order__count">(2)</sup>
+        </h2>
+
+        <ul class="order__list"></ul>
+
+        <div class="order__price">
+          <p class="order__price-title">Всього:</p>
+          <p class="order__total-price text-red">950&nbsp;₴</p>
+        </div>
+
+        <form class="order__form">
+          <label class="order__label">
+            <input type="text" class="order__input" required name="name" placeholder="Ваше им'я" />
+          </label>
+
+          <label class="order__label">
+            <input type="text" class="order__input" required name="phone" placeholder="Телефон" />
+          </label>
+
+          <button class="order__submit btn">Додати</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal_make-your-own">
+    <div class="modal__main modal__main_make">
+      <div class="make">
+        <h3 class="make__title">
+          Збери <span class="text-red">свій </span>смузі
+        </h3>
+
+        <form class="make__form make__form_make-your-own">
+          <input class="make__input-title" type="hidden" name="title" />
+          <fieldset class="make__fieldset make__fieldset_ingredients">
+            <label class="make__label checkbox">
+              <input type="checkbox" class="checkbox__input" name="ingredients" value="Полуниця" />Полуниця
+            </label>
+
+            <label class="make__label checkbox">
+              <input type="checkbox" class="checkbox__input" name="ingredients" value="Банан" />Банан
+            </label>
+
+            <label class="make__label checkbox">
+              <input type="checkbox" class="checkbox__input" name="ingredients" value="Манго" />Манго
+            </label>
+
+            <label class="make__label checkbox">
+              <input type="checkbox" class="checkbox__input" name="ingredients" value="Ківі" />Ківі
+            </label>
+
+            <label class="make__label checkbox">
+              <input type="checkbox" class="checkbox__input" name="ingredients" value="Маракуйя" />Маракуйя
+            </label>
+
+            <label class="make__label checkbox">
+              <input type="checkbox" class="checkbox__input" name="ingredients" value="Яблуко" />Яблуко
+            </label>
+          </fieldset>
+
+          <div class="make__wrap-add">
+            <fieldset class="make__fieldset make__fieldset_topping">
+              <legend class="make__legend">Дополнительно:</legend>
+              <label class="make__label checkbox">
+                <input type="checkbox" class="checkbox__input" name="topping" value="М'ята" />М'ята
+                <span class="make__upsale">(+50&nbsp;₴)</span>
+              </label>
+
+              <label class="make__label checkbox">
+                <input type="checkbox" class="checkbox__input" name="topping" value="Лід" />Лід
+                <span class="make__upsale">(+10&nbsp;₴)</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="make__fieldset make__fieldset_cup">
+              <legend class="make__legend">Стакан:</legend>
+              <label class="make__label radio">
+                <input type="radio" class="radio__input" name="cup" value="Біорозкладний" />Біорозкладний
+                <span class="make__upsale">(+20&nbsp;₴)</span>
+              </label>
+
+              <label class="make__label radio">
+                <input type="radio" class="radio__input" checked name="cup" value="Пластиковий" />Пластиковий
+                <span class="make__upsale">(+0&nbsp;₴)</span>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="make__footer">
+            <button class="btn make__add-btn" type="submit">Додати</button>
+
+            <div class="make__total">
+              <input type="hidden" class="make__input make__input_price" name="price" value="150" />
+              <p class="make__total-price text-red">150&nbsp;₴</p>
+              <input type="hidden" class="make__input make__input_size" name="size" value="300" />
+              <p class="make__total-size">300мл</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal_add">
+    <div class="modal__main modal__main_make">
+      <div class="make">
+        <h3 class="make__title">Банановий смузі</h3>
+
+        <form class="make__form make__form_add">
+          <input class="make__input-title" type="hidden" name="title" />
+          <div class="make__wrap-add">
+            <fieldset class="make__fieldset make__fieldset_topping">
+              <legend class="make__legend">Додатково:</legend>
+              <label class="make__label checkbox">
+                <input type="checkbox" class="checkbox__input" name="topping" value="М'ята" />М'ята
+                <span class="make__upsale">(+50&nbsp;₴)</span>
+              </label>
+
+              <label class="make__label checkbox">
+                <input type="checkbox" class="checkbox__input" name="topping" value="Лід" />Лід
+                <span class="make__upsale">(+10&nbsp;₴)</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="make__fieldset make__fieldset_cup">
+              <legend class="make__legend">Стакан:</legend>
+              <label class="make__label radio">
+                <input type="radio" class="radio__input" name="cup" value="Біорозкладний" />Біорозкладний
+                <span class="make__upsale">(+20&nbsp;₴)</span>
+              </label>
+
+              <label class="make__label radio">
+                <input type="radio" class="radio__input" checked name="cup" value="Пластиковий " />Пластиковий
+                <span class="make__upsale">(+0&nbsp;₴)</span>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="make__footer">
+            <button class="btn make__add-btn" type="submit">Додати</button>
+
+            <div class="make__total">
+              <input class="make__input-start-price" type="hidden" />
+              <p class="make__total-price text-red">340&nbsp;₴</p>
+              <input class="make__input-price" type="hidden" name="price" />
+              <p class="make__total-size">300мл</p>
+              <input class="make__input-size" type="hidden" name="size" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal_success">
+    <div class="modal__main modal__main_success">
+      <div class="success">
+        <p class="success__text">
+          Вітаємо <span class="success__name text-red"></span>! Замовлення
+          прийнято та буде готове через 15 хвилин. Чекаємо на Вас! З турботою,
+          <span>Freshy</span>.
+        </p>
+
+        <button class="success__btn">
+          <svg width="18" height="20" viewBox="0 0 11 12" fill="" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.926 11.616C2.926 11.49 2.912 11.434 2.856 11.434L2.534 11.588C2.534 11.518 2.492 11.476 2.422 11.448L2.31 11.434C2.212 11.434 2.17 11.448 2.03 11.532C1.988 11.448 1.932 11.35 1.89 11.266C1.526 10.566 1.148 9.516 0.98 9.054C0.896 8.816 0.812 8.326 0.714 7.584C0.826 7.654 0.91 7.682 0.952 7.682C1.008 7.682 1.078 7.584 1.134 7.388C1.162 7.43 1.218 7.444 1.288 7.444C1.33 7.444 1.386 7.43 1.414 7.388L1.638 7.052L1.89 7.136H1.904C1.932 7.136 1.974 7.094 2.044 7.052C2.114 7.01 2.17 6.982 2.212 6.982L2.254 6.996C2.478 7.108 2.632 7.304 2.702 7.612C2.87 8.326 3.024 8.676 3.206 8.676C3.36 8.676 3.57 8.494 3.794 8.144C4.018 7.794 4.242 7.318 4.494 6.744C4.508 6.856 4.522 6.912 4.55 6.912C4.634 6.912 4.844 6.422 5.362 5.596C6.132 4.35 8.036 1.956 8.526 1.62C8.89 1.368 9.17 1.13 9.366 0.92C9.338 1.06 9.31 1.158 9.31 1.2C9.31 1.242 9.338 1.256 9.366 1.256L9.758 1.06V1.116C9.758 1.186 9.772 1.228 9.814 1.228C9.87 1.228 10.094 1.004 10.122 0.92L10.094 1.116L10.57 0.836L10.458 1.088C10.598 0.99 10.71 0.933999 10.78 0.933999C10.85 0.933999 10.892 1.046 10.892 1.116C10.892 1.228 10.794 1.382 10.64 1.578C10.472 1.802 10.052 2.236 8.792 3.678C8.246 4.294 5.824 7.584 5.362 8.368L4.494 9.838C4.116 10.468 3.878 10.874 3.752 11.028C3.626 11.182 3.472 11.336 3.29 11.476L3.164 11.406L3.052 11.476L2.926 11.616Z"
+              currentcolor="#34b905" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
