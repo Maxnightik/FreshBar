@@ -56,7 +56,7 @@ const createCard = (item) => {
         <p class="coctail__size">${item.size}</p>
         </div>
 
-        <button class="btn coctail__btn coctail__btn_add" data-id="${item.id}">Добавить</button>
+        <button class="btn coctail__btn coctail__btn_add" data-id="${item.id}">Додати</button>
     </div>
 
   `;
